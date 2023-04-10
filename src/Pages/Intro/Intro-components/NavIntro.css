@@ -1,0 +1,9 @@
+
+.NavIntro .title{
+   color:white;
+    margin-left:20px;
+}
+ .NavIntro{
+   justify-content: space-between;
+}
+

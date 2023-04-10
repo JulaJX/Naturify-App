@@ -20,8 +20,6 @@ function App() {
           <Route path="/App-home" element={<Home/>} />
           <Route path="/App-sounds" element={<Sounds/>} />
           <Route path="/App-saved" element={<Saved/>} />
-
-
         </Routes>
     </div>
   )
