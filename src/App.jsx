@@ -3,23 +3,29 @@ import {Routes, Route} from 'react-router-dom'
 
 //Pages
 import Intro from './Pages/Intro/Intro'
-import Home from './Pages/N-App/Home/Home'
-import Saved from './Pages/N-App/Saved/Saved'
-import Sounds from './Pages/N-App/Sounds/Sounds'
+import Napp from './Pages/N-App/Napp/Napp'
+
+import Home from './Pages/N-App/Napp/pages/Home';
+import Saved from './Pages/N-App/Napp/pages/Saved';
+import Sounds from './Pages/N-App/Napp/pages/Sounds';
+
 //Components
 
 
 //Styles
 import './App.css'
 
+
 function App() {
   return (
     <div className="App">
         <Routes>
           <Route path="/" element={<Intro/>} />
-          <Route path="/App-home" element={<Home/>} />
-          <Route path="/App-sounds" element={<Sounds/>} />
-          <Route path="/App-saved" element={<Saved/>} />
+          <Route path="App" element={<Napp/>}>
+                <Route path="home" element={<Home/>} />
+                <Route path="sounds" element={<Sounds/>} />
+                <Route path="saved" element={<Saved/>} />
+          </Route>
         </Routes>
     </div>
   )

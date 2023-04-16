@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import './NavIntro.css';
 import logo from '../../../Assets/logo.png';
+
 
 const NavIntro = () => {
     return ( 
@@ -11,7 +13,7 @@ const NavIntro = () => {
             </div>
 
             <div className="button-box flex justify-center align-center flex-col md:flex-row lg:mt-0 mt-[40px]">
-                <button className='px-9 py-2 text-[13px] my-2 mx-10 bg-opacity rounded-full font-bold text-white tracking-wider'>Try in Browser</button>
+                <Link to='/App/home'><button className='px-9 py-2 text-[13px] my-2 mx-10 bg-opacity rounded-full font-bold text-white tracking-wider'>Try in Browser</button></Link>
                 <button className='px-9 py-2 text-[13px]  my-2 mx-10 bg-primary rounded-full font-bold text-white tracking-wider'>Download Desktop</button>
             </div>
       
